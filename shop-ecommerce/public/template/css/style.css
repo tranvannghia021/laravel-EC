@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body, .main-menu > li > a, .ltext-102 {
+    font-family: 'Roboto', sans-serif ;
+}
+.hidden  {
+    display: none !important;
+}
+.fix-space-header {
+  position: relative;
+  top:100px;
+}
+/*----------------------------------------------------------------CUSTOM CSS =================================================================*/
+.tilte_order{
+ 
+    font-size: 1.1rem;
+    font-weight: 400;
+    margin: 0;
+    color: #fff;
+}
+.search-input{
+  float: right;
+  display: flex; 
+  justify-content: end 
+}
+.noti_check{
+  border-radius: 50%;
+  color: #fff;
+  line-height: 35px;
+  width: 35px;
+  height: 35px;
+  /* background: green; */
+}
+.table-admin-overflow {
+    overflow: auto !important;
+    margin-left: 250px;
+  }
+/*.wrap-menu-desktop*/
+.dropbtn {
+    margin-left: 1em;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    overflow: hidden;
+    border-radius: 4px;
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    overflow: hidden;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ddd;
+    font-weight: bold;
+  }
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #78c5f2;}
+
+.no-cart{
+  margin: 10em 2em;
+}
+  .title-no-cart{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 3px 1px #eee;
+    text-transform: uppercase;
+  }
+  .img-no-cart {
+    width: 40%;
+  
+  }
+  .title-no-cart-notify{
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 2px 3px 1px #eee;
+    text-transform: uppercase;
+    text-align: center;
+    line-height:1.3em;
+    margin-bottom:10em;
+  }
+  .img-no-cart-notify {
+    width: 80%;
+  
+  }
+  .form-message {
+    text-align: left;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    font-weight:bold;
+    font-style: italic;
+    padding: 8px 0 0 4px;
+    color: #f33a58;
+}
+.form-submit{
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.h-100 {
+  
+  height: 35px !important;
+  margin-top: 12px;
+}
+/*PopUp Update Data Customer*/
+.input-content {
+	padding: 16px;
+}
+.input-content label{
+	margin-left: 8ex;
+	margin-bottom: 2px;
+}
+.input-content .login-input{
+	width: 75%;
+	padding: 10px 12px;
+	margin: 1% 12.5%;
+	display: inline-block;
+	border-top: 1.4px solid #eee;
+	border-left: 1.8px solid #ddd;
+	box-sizing: border-box;
+}
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+	text-align: center;
+	margin: 10px 0 12px 0;
+	position: relative;
+  }
+  
+  img.avatar {
+	width: 40%;
+	border-radius: 50%;
+  }
+ 
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 12; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 1% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 40%; /* Could be more or less, depending on screen size */
+	height: 85%;
+  }
+  
+  /* The Close Button (x) */
+ .modal .modal-content .close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .modal .modal-content .close:hover,
+  .modal .modal-content .close:focus {
+	color: red;
+	cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }
+
+  /* Content User.php*/
+  .content .user-content .side-menu{
+	  margin-bottom: 3%;
+  }
+.content .user-content .side-menu .username {
+	border: 2px solid #000;
+	width: 80%;
+	margin-left: 11%;
+	background-color: #222222;
+	color: white;
+	padding-top: 3%;
+	padding-bottom: 3%;
+} 
+.content .user-content .side-menu .username .fa-user-circle{
+	font-size: 23px; 
+	padding-left: 22%;
+}
+.content .user-content .side-menu .submenu {
+	border: 2px solid #000;
+	width: 80%;
+	margin-left: 11%;
+	padding: 0;
+} 
+.content .user-content .side-menu .submenu ul{
+	margin: 0;
+	padding: 0;
+}
+.content .user-content .table-order{
+	width: 80%;
+	margin: 2% 10%;
+}
+.content .user-content .table-order .table {
+	border: 1px solid rgb(99, 97, 97);
+	width: 100%; 
+	text-align: center;
+	border-radius: 3px;
+} 
+.content .user-content .table-order .table tr .name-product .name_product_content{
+	float:left;
+	color: #000;
+}
+.content .user-content .table-order .table tr .id_order a {
+	font-weight: bold;
+	font-size: 20px;
+	color: #000;
+}
+.thead-dark{
+  background-color: #000;
+}
+.subc{
+	list-style-type: none;
+	display: block;
+	padding: 5%;
+	border: 1px solid wheat;
+	text-align: center;
+}
+
+.information-user-change-password {
+  margin: 1.5em 2em 0 1em;
+	border: 2px dotted black;  padding-top: 2%;
+	padding-bottom: 2%; padding-left: 3%;
+	padding-right: 3%; border-radius: 5px;
+}
+.nformation-user-change-password-form{
+  margin-bottom: 2em;
+}
+.information-user {
+  margin-top: 2.5em;
+	border: 2px dotted black; 
+	margin-left: 11%;
+	width: 80%; padding-top: 3%;
+	padding-bottom: 2%; padding-left: 3%;
+	padding-right: 3%; border-radius: 5px;}
+.information .btn-outline-primary {
+	margin-left: 11%;
+	
+}
+.information-user .title-infor{
+	font-weight: bold; font-size: 18px;
+  line-height:2em;
+}
+.name-product{
+	width: 22%;
+	padding-left: 2ex;
+	padding-right: 2ex;
+}
+
+
+.content p{
+	font-weight: lighter;
+}
+
+.td
+{
+	width: 15%;
+	padding: 0.7em;
+	background-color: rgb(214, 214, 214);
+}
+
+
+.tr
+{
+	width: 8%;
+	padding: 0.7em;
+	background-color: rgb(214, 214, 214);
+  text-align: center;
+  align-items: center;
+  line-height: 1em;
+}
+.tongtien
+{
+	width: 15%;
+	padding: 0.7em;
+}
+.user-content{
+	padding: 6em 5em;
+	margin-left: 1em;
+	overflow: hidden;
+  
+}
+
+/* Chi Tiet Hoa Don*/
+.order-detail{
+	width: 80%;
+	margin:0 10%;
+}
+
+.detail-order-table .wrapper .order_summary tr>td, 
+.detail-order-table .wrapper .order_summary tr>th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: top;
+    border-top: 1px solid #ddd;
+
+}
+.order_avail {
+    text-align: center;
+}
+.img_order {
+    vertical-align: top;
+    max-width: 100%;
+}
+.detail-order-table .wrapper .order_summary{
+	border: 1px solid #555;
+}
+.detail-order-table .wrapper .order_summary > thead, 
+.detail-order-table .wrapper .order_summary > tfoot {
+    background: #f7f7f7;
+    font-size: 16px;
+}
+.detail-order-table .wrapper .order_summary td.order_product {
+    width: 120px;
+    padding: 15px;
+}
+.page-order .order_description {
+    font-size: 14px;
+}
+.page-order .product-name {
+    font-size: 16px;
+}
+.detail-order-table .wrapper .order_summary td {
+    vertical-align: middle!important;
+    padding: 20px;
+}
+.detail-order-table .wrapper .order_summary a {
+    color: #666;
+    text-decoration: none;
+	outline: none !important;
+}
+
+
+.detail-order-table .wrapper .order_summary .action {
+    text-align: center;
+}
+.detail-order-table .wrapper .order_summary .action a {
+    background: url(https://i.imgur.com/wBgtljO.png) no-repeat center center;
+    font-size: 0;
+    height: 9px;
+    width: 9px;
+    display: inline-block;
+    line-height: 24px;
+}
+.detail-order-table .wrapper .order_summary tfoot {
+    text-align: right;
+}
+
+/* My profile */
+.tab-item.active {
+  opacity: 1;
+}
+.tab-content {
+  padding: 28px 0;
+}
+.tab-pane {
+  color: #333;
+  display: none;
+}
+.tab-pane.active {
+  display: block;
+}
+.subc:hover{
+	background-color: lightblue;
+	color: rgb(226, 19, 64);
+	transition: 0.1s left ease-in-out;
+	font-weight: bold;
+
+}
+.txt-center{
+  text-align: center;
+}
+.bold {
+  font-weight: bold;
+}
+.form-group-change-password{
+  margin-bottom: 0px!important;
+}
+
+.detail-order-table{
+  padding: 1.5em 10em;
+}
+.vnpay-img{
+  width:100px;
+  height:90px;
+}
+.ghtk-img{
+  margin-left: 10px;
+  width:150px;
+  height:auto;
+}
